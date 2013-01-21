@@ -1,4 +1,4 @@
 TicTacToe
 =========
 
-Demo application demonstrating ZubhiumSDK
+Demo application demonstrates ZubhiumSDK.
