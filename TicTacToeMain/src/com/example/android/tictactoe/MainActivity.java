@@ -51,10 +51,16 @@ public class MainActivity extends Activity {
 
 	private void startGame(boolean startWithHuman) {
 		Intent i = new Intent(this, GameActivity.class);
-		i.putExtra(
-				GameActivity.EXTRA_START_PLAYER,
-				startWithHuman ? State.PLAYER1.getValue() : State.PLAYER2
-						.getValue());
+		if (startWithHuman) {
+			i.putExtra(GameActivity.EXTRA_START_PLAYER,
+					State.PLAYER1.getValue());
+		} else {
+			// We are intentionally introducing null pointer exception here, to
+			// test ZubhiumSDK
+			// i.putExtra(GameActivity.EXTRA_START_PLAYER,
+			// State.PLAYER1.getValue());
+			i = null;
+		}
 		startActivity(i);
 	}
 }
