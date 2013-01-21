@@ -5,7 +5,9 @@ Summary:
 --------
 
 These two projects work together. They demonstrate how to use the ability to
-split an APK into multiple projects.
+split an APK into multiple projects. We have integrated ZubhiumSDK inside 
+GameApplication.java. To test crash reporting click on 
+"Start-Computer goes first" button.
 
 Build is supported both via Ant (command-line tools) or via ADT (the Android
 plugin for Eclipse).
